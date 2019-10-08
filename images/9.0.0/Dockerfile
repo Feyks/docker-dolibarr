@@ -20,6 +20,7 @@ ENV WWW_USER_ID 33
 ENV WWW_GROUP_ID 33
 
 ENV PHP_INI_DATE_TIMEZONE 'UTC'
+ENV PHP_INI_MEMORY_LIMIT 256M
 
 RUN apt-get update -q && apt-get upgrade -yq \
 	&& apt-get install -yq \
