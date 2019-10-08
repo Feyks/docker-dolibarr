@@ -13,6 +13,7 @@ if [ ! -f /usr/local/etc/php/php.ini ]; then
   cat <<EOF > /usr/local/etc/php/php.ini
 date.timezone = $PHP_INI_DATE_TIMEZONE
 sendmail_path = /usr/sbin/sendmail -t -i
+memory_limit = $PHP_INI_MEMORY_LIMIT
 EOF
 fi
 
